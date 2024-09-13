@@ -1,0 +1,58 @@
+body {
+  background-color: #1a252c;
+}
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.image-container > img {
+  object-fit: cover;
+  object-position: top;
+  flex-basis: calc(20% - 1rem);
+  border-radius: 10px;
+  flex-grow: 1;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+.image-container > img:hover {
+  filter: grayscale(0%);
+}
+.image-container > img:hover {
+  filter: grayscale(0%);
+}
+
+/* Flex 1 effect */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+}
+.images > img {
+  width: 100px;
+  height: 300px;
+  object-fit: cover;
+  flex: 0;
+  transition: all 0.3s ease;
+  transform-origin: left right;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+}
+
+.images:hover > img {
+  filter: blur(20px);
+}
+.images > img:hover {
+  border: none;
+  filter: none;
+  filter: drop-shadow(20px 20px 5px rgba(0, 0, 0, 0.4));
+  width: 300px;
+  max-width: 300px;
+}

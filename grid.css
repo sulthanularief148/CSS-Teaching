@@ -1,0 +1,70 @@
+/* Display Property Grid */
+/* 
+grid-template-columns
+  grid-template-rows: 80px 200px;
+   80 will be first row
+   200 will be second row
+
+gap - column-gap
+      row-gap
+      gap
+
+Justify Content - align the whole grid inside the container.
+ space-evenly
+ space-around
+ space-between
+ center
+ start
+ end
+
+ The align-content Property - vertically align the whole grid inside the container.
+   center
+   space-evenly
+   space-around
+   space-between
+   start
+   end
+   
+ Grid Items: Child Elements      
+
+Grid Lines - 
+ The lines between columns are called column lines.
+ The lines between rows are called row lines.
+
+
+
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: aqua;
+  padding: 10px;
+  gap: 1rem 2rem;
+  /* Gap - Row and Column */
+}
+.grid-item {
+  background-color: blue;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.grid-containers {
+  display: grid;
+  /* Each row is defined by apostrophes (' ') */
+  grid-template-areas: "myArea myArea myArea myArea myArea myArea";
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-containers > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.item1 {
+    grid-area: myArea;
+  }

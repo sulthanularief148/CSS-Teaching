@@ -1,0 +1,7 @@
+/* 
+Filter Property Values:
+ grayscale - 0% - 100% - Change all images to black and white (100% gray):
+ filter: none;
+ blur(5px) - Apply a blur effect to the image:
+ filter: brightness(200%); - Adjust the brightness of the image:
+*/

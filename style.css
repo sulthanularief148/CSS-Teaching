@@ -1,0 +1,112 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+h1::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 36, 36);
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+h1::before {
+  content: "😊";
+}
+h1::after {
+  content: "🤣";
+}
+a::selection {
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 36, 36);
+}
+ul li::marker {
+  color: red;
+}
+ol li::marker {
+  color: blue;
+}
+p::first-line {
+  color: rgb(123, 0, 255);
+}
+p::first-letter {
+  color: rgb(248, 0, 0);
+  font-size: 25px;
+}
+
+.demo1:hover {
+  color: rgb(255, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+.demo2:visited {
+  color: violet;
+}
+.demo3:active {
+  color: tomato;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* background-color: lightgrey; */
+  box-shadow: rgba(255, 0, 0, 0.25) 0px 14px 28px,
+    rgba(35, 35, 142, 0.512) 0px 10px 10px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 12px;
+}
+.parent {
+  position: relative;
+
+  overflow: hidden;
+}
+.child {
+  position: relative;
+  border: 2px solid green;
+  width: 400px;
+  height: 400px;
+}
+.child > p {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+}
+.left-wrapper {
+  float: left;
+  width: 50%;
+}
+.left-wrapper > p {
+  padding: 50px;
+}
+.right-wrapper {
+  float: right;
+  width: 40%;
+}
+.right-wrapper,
+img {
+  border-radius: 40px;
+  object-fit: cover;
+}
+.wats-app-fixed {
+  width: 100px;
+  height: 100px;
+}
+span {
+  position: fixed;
+  right: 23px;
+  bottom: 20px;
+}
+.parent {
+  width: 300px;
+  height: 200px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.position-child {
+  position: absolute;
+  left: 20%;
+}

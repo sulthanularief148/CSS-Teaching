@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Session</title>
+    <style>
+      * {
+        background-color: black;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 42px;
+        margin: 50px;
+        cursor: pointer;
+      }
+      .common {
+        width: 200px;
+        height: 200px;
+      }
+      .item1 {
+        background-color: red;
+      }
+      .item1:hover {
+        transform: rotate(60deg);
+      }
+
+      .item2 {
+        background-color: blue;
+      }
+      .item2:hover {
+        transform: scale(2, 1);
+      }
+
+      .item3 {
+        background-color: green;
+      }
+      .item3:hover {
+        transform: scaleX(2);
+      }
+      .item4 {
+        background-color: yellow;
+      }
+      .item4:hover {
+        /* 20 degress x axix , 30 degress y axis */
+        transform: skew(20deg, 30deg);
+      }
+      .item5 {
+        background-color: pink;
+      }
+      .item6 {
+        background-color: violet;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: crimson;
+        animation-name: circle;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3;
+        
+      }
+      @keyframes circle {
+        10% {
+          background-color: aqua;
+          width: 150px;
+          height: 150px;
+          transform: rotateX(50deg);
+        }
+        50% {
+          background-color: rgb(0, 0, 0);
+          width: 200px;
+          height: 200px;
+          transform: rotateX(100deg);
+        }
+        70% {
+          transform: rotateX(150deg);
+        }
+        80% {
+          background-color: rgb(251, 251, 251);
+          width: 300px;
+          height: 300px;
+          transform: rotateX(200deg);
+        }
+        90% {
+          transform: rotateX(250deg);
+        }
+        100% {
+          transform: rotateX(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="common item1">Item 1</div>
+      <div class="common item2">Item 2</div>
+      <div class="common item3">Item 3</div>
+      <div class="common item4">Item 4</div>
+      <div class="common item5">Item 5</div>
+      <div class="common item6">Item 6</div>
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>

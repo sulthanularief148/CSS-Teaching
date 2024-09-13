@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Property</title>
+    <link rel="stylesheet" href="filter.css" />
+    <style>
+      * {
+        background-color: black;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 10px;
+        filter: grayscale(0);
+      }
+      img:hover {
+        filter: grayscale(1);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=600"
+      width="200"
+      height="200"
+      alt="cat"
+      title="Cat Image"
+    />
+  </body>
+</html>
+<!-- GreyScale 0 - 1 or 0% - 100% -->
